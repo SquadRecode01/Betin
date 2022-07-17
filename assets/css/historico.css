@@ -1,0 +1,12 @@
+.historico-titulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+}
+
+.subtitulo-historico {
+    font-weight: 400;
+}
+
+.imagem-historico {
+    width: 300px;
+}

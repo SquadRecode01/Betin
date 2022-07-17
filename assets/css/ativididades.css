@@ -1,0 +1,24 @@
+.card {
+    background-color: rgba(137, 43, 226, 0.205);
+    width: 15rem;
+}
+
+.titulo-atividades {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+}
+
+.card-imagem {
+    object-fit: cover;
+    height: 20rem;
+}
+
+.cards__atividades {
+    max-width: 16rem;
+}
+
+@media screen and (max-width: 992px) {
+    .cards__atividades {
+        max-width: 40rem;
+    }
+}

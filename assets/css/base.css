@@ -1,0 +1,26 @@
+/* Imports css */
+@import url(home.css);
+@import url(ativididades.css);
+@import url(historico.css);
+@import url(sobre.css);
+@import url(recup-senha.css);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+/* Variaveis */
+:root{
+    --fonte-primaria: 'Poppins', sans-serif;
+    --cor-primaria:#722dfa;
+} 
+
+
+.logo {
+    width:7rem;
+}
+
+a {
+    font-family: var(--fonte-primaria);
+}
+

@@ -1,0 +1,7 @@
+.logo-betin-sobre {
+    width: 30rem;
+}
+
+.titulo-sobre, .texto {
+    font-family: var(--fonte-primaria);
+}

@@ -1,52 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Sobre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <script src="https://kit.fontawesome.com/f71e83bb45.js" crossorigin="anonymous"></script>
+    <title>Betin | Sobre</title>
 </head>
-
 <body>
-    <div class="container-fluid">
-        <header>
-            <p>Logo</p>
-            <nav>
-            
-                <a href="homePage.html">Home</a>
-                <a href="Atividades.html">Atividades</a>
-                <a href="Historico.html">Histórico</a>
-                <a href="Sobre.html">Sobre</a>
-            
-            </nav>
-        </header>
-        <main>
-            <br><br><br>
-            
-              <!-- Mensagem aleatória pra representar o Sobre. -->
-            <h3>
-                Sobre o Betin.
-            </h3>
-            <br><br>
-            <h4>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a 
-                piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard 
-                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of 
-                the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through
-                the cites of the word in classical literature, discovered the undoubtable source. Lorem 
-                Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-                (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on 
-                the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
-                "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those 
-                interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero 
-                are also reproduced in their exact original form, accompanied by English versions from the
-                1914 translation by H. Rackham
-            </h4>
+<header class="cabecalho ">
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+        <a class="navbar-brand" href="index.html"><img src="./assets/img/logo-betin.svg" alt="logo dass viagens" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li><a class="nav-item nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-item nav-link" href="Atividades.html">Atividades</a></li>
+            <li><a class="nav-item nav-link" href="Historico.html">Histórico</a></li>
+            <li><a class="nav-item nav-link" href="Sobre.html">Sobre</a></li>
+          </ul>
         </div>
-    </main>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li><a class="nav-item nav-link" href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+            <li><a class="nav-item nav-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class="nav-item nav-link" href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+</header>
+<main>
+    <section class="principal-sobre container ">
+        <article class="sobre">
+            <figure class="d-flex justify-content-center">
+                <img src="./assets/img/logo-betin.svg" alt="" class="logo-betin-sobre">
+            </figure>
+            <h2 class="titulo-sobre text-center mb-3">Educação sem fronteiras</h2>
+        </article>
+    </section>
+    <section class="sobre-texto container">
+        <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, in labore similique qui, hic maiores repudiandae porro, id nihil ad unde consectetur? Quos delectus dignissimos perspiciatis possimus quae, laboriosam aspernatur! Aliquam non nostrum optio doloribus exercitationem molestiae, enim dolor esse aperiam, quia deleniti cupiditate necessitatibus laborum accusamus odio officiis recusandae, quae illo deserunt corrupti rem consequatur itaque! Itaque accusantium deserunt possimus ipsum earum nihil quaerat illum, obcaecati libero, sequi optio aperiam dignissimos praesentium corporis quos! Praesentium quis architecto vel fuga optio! Vel deleniti, error officiis impedit obcaecati nisi exercitationem distinctio commodi dignissimos placeat voluptatem odio hic, quos esse dolorum adipisci?</p>
+    </section>
+</main>
+<footer class="p-3 mt-5">
+    <p class="text-dark m-0 text-center">&copy; Betin 2022</p>
+    <ul class="navbar-nav text-center d-flex flex-row justify-content-center">
+        <li><a class="nav-item nav-link mr-2" href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+        <li><a class="nav-item nav-link mr-2" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a class="nav-item nav-link mr-2" href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+    </ul>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>

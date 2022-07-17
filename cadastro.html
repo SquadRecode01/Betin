@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <script src="https://kit.fontawesome.com/f71e83bb45.js" crossorigin="anonymous"></script>
+    <title>Betin | Cadastro</title>
 </head>
-
 <body>
-    <div class="container-fluid">
-        <header>
-            <p> Logo </p>
-            <nav>
-            
-                <a href="homePage.html">Home</a>
-                <a href="Atividades.html">Atividades</a>
-                <a href="Historico.html">Histórico</a>
-                <a href="Sobre.html">Sobre</a>
-            
-            </nav>
-        </header>
-        <main>
+<header class="cabecalho ">
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+        <a class="navbar-brand" href="index.html"><img src="./assets/img/logo-betin.svg" alt="logo dass viagens" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li><a class="nav-item nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-item nav-link" href="Atividades.html">Atividades</a></li>
+            <li><a class="nav-item nav-link" href="Historico.html">Histórico</a></li>
+            <li><a class="nav-item nav-link" href="Sobre.html">Sobre</a></li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li><a class="nav-item nav-link" href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+            <li><a class="nav-item nav-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class="nav-item nav-link" href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+</header>
+    <main>
+        <section class="container">
             <form action="/pagina-processa-dados-do-form" method="post">
 
                 <!-- section geral de todo os dados. --> 
                 <section id="dadosPessoais">
                     <p>(*) Campos Obrigatórios </p>
-
+    
                     <!-- div de dados iniciais --> 
                     <div>
                         <div>
@@ -55,41 +67,41 @@
                         <div>
                             <label for="cpf">CPF *</label>
                             <input type="text" id="cpf" required>
-
+    
                             <label for="Data">Data de nascimento*</label>
                             <input type="date" id="Data"><br>
-
+    
                             <label for="sexo">Sexo *</label>
                             <input type="radio" id="sexo" name="s" >M
                             <input type="radio" id="sexo" name="s" >F
-
+    
                             
                             <label for="nacionalidade">Nacionalidade</label>
                             <input type="radio" id="nacionalidade" name="n">Brasileira
                             <input type="radio" id="nacionalidade" name="n">Estrangeira
-
+    
                             <!-- Dados de contato -->
                             <div>
                                 
                                 <p>Dados de Contato</p>
                                 <label for="telefone">Telefone</label>
                                 <input type="tel" id="telefone">
-
+    
                                 <label for="celular">N° Celular</label>
                                 <input type="tel" id="celular">
-
+    
                                 
                                 <label for="recado">N° Celular Recado</label>
                                 <input type="tel" id="recado">
                             </div>
                             <!-- Fim dos dados de contato -->
-
+    
                         
-
+    
                         </div>
-
+    
                     </div>
-
+    
                 
                     <!-- Div de endereço -->
                     <div>
@@ -107,9 +119,9 @@
                             <input type="text" required>
                             <label type="cep">CEP</label>
                             <input type="text" id="cep" placeholder="Caso não possua não precisa preencher">
-
+    
                         </div>
-
+    
                     </div>
                     <!-- Fim da Div de endereço -->
                 
@@ -121,10 +133,10 @@
                         <div>
                             <label>Trabalha Atualmente?*</label>
                             <input type="radio" name="c">Sim <input type="radio" name="c">Não<br><br>
-
+    
                             <label>Se sim, é de Carteira assinada?</label>
                             <input type="radio" name="b">Sim <input type="radio" name="b">Não<br><br>
-
+    
                             <label>já fez algum trabalho sem carteira assinada? *</label>
                             <input type="radio"name="a">Sim <input type="radio" name="a">Não<br><br>
                             
@@ -135,22 +147,30 @@
                                         <option>Fisíca</option>
                                         <option>Mental</option>
                                 </select>
-                            
-                            
-                            
-
                         </div>
                     </div>
-
+    
                     <div>
                         <input type="submit" class="btn btn-info">
                     </div>
-
+    
                 
-
+    
                 </section>
             </form>
-        </main>
-    </div>
-</body>
-</html>
+        </section>
+    </main>
+    <footer class="p-3 mt-5">
+        <p class="text-dark m-0 text-center">&copy; Betin 2022</p>
+        <ul class="navbar-nav text-center d-flex flex-row justify-content-center">
+          <li><a class="nav-item nav-link mr-2" href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+          <li><a class="nav-item nav-link mr-2" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a class="nav-item nav-link mr-2" href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+      </ul>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="./assets/js/main.js"></script>
+      </body>
+      </html>

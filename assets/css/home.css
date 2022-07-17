@@ -1,0 +1,24 @@
+
+/* como o elemento se comporta em relação ao seu container */
+.img-carrosel {
+    object-fit: cover;
+    object-position: 0% 20%;
+    height: 75vh;
+}
+
+
+.login-secao {
+    width: 400px;
+    background-color: rgba(137, 43, 226, 0.075);
+    border-radius: 17px;
+}
+
+.titulo-principal, .btn{
+    font-family: var(--fonte-primaria);
+}
+
+@media screen and (min-width:375px){
+    .img-carrosel {
+        object-position: 45% 40%;
+    }
+}
